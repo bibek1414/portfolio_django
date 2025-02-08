@@ -24,17 +24,17 @@
         <!-- Todo Project -->
         <div class="bg-white shadow-lg rounded-lg p-6">
             <h2 class="text-2xl font-semibold text-gray-800">Todo Project</h2>
-            <a href="https://github.com/bibek1414/todo_django" target="_blank">
+            <a href="https://todo-90zm.onrender.com" target="_blank">
                 <img src="{% static 'images/todoprojectmage.png' %}" alt="Todo Project"
-                    class="w-full h-auto mb-4 rounded-lg">
+                     class="w-full h-auto mb-4 rounded-lg">
             </a>
             <p class="text-gray-600 mt-2">A task management application built with Django. It includes functionalities
                 like adding, editing, and deleting tasks.</p>
-            <a href="https://github.com/bibek1414/todo_django" target="_blank"
+            <a href="https://github.com/bibek1414/todo-django" target="_blank"
                 class="text-blue-500 mt-3 inline-block">View on GitHub</a>
         </div>
 
-        <!-- GitHub Projects (Dynamically fetched) -->
+        {% comment %} <!-- GitHub Projects (Dynamically fetched) -->
         {% for repo in repos %}
         <div class="bg-white shadow-lg rounded-lg p-6">
             <h2 class="text-2xl font-semibold text-gray-800">{{ repo.name }}</h2>
@@ -45,7 +45,7 @@
             <p class="text-gray-600 mt-2">{{ repo.description|default:"No description available" }}</p>
             <a href="{{ repo.html_url }}" target="_blank" class="text-blue-500 mt-3 inline-block">View on GitHub</a>
         </div>
-        {% endfor %}
+        {% endfor %} {% endcomment %}
     </div>
 </div>
 
