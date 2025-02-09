@@ -34,18 +34,17 @@
                 class="text-blue-500 mt-3 inline-block">View on GitHub</a>
         </div>
 
-        {% comment %} <!-- GitHub Projects (Dynamically fetched) -->
-        {% for repo in repos %}
+        <!-- Tweeter Bar Project -->
         <div class="bg-white shadow-lg rounded-lg p-6">
-            <h2 class="text-2xl font-semibold text-gray-800">{{ repo.name }}</h2>
-            <a href="{{ repo.html_url }}" target="_blank">
-                <img src="https://via.placeholder.com/500x300" alt="{{ repo.name }}"
+            <h2 class="text-2xl font-semibold text-gray-800">Tweeter Bar</h2>
+            <a href="https://tweet-django-xxrw.onrender.com" target="_blank">
+                <img src="{% static 'images/tweeter-bar.png' %}" alt="Tweeter Bar"
                     class="w-full h-auto mb-4 rounded-lg">
             </a>
-            <p class="text-gray-600 mt-2">{{ repo.description|default:"No description available" }}</p>
-            <a href="{{ repo.html_url }}" target="_blank" class="text-blue-500 mt-3 inline-block">View on GitHub</a>
+            <p class="text-gray-600 mt-2">A social media app where users can register, log in, log out, post tweets, and edit their posts. Built with Django and offers a full set of user management features.</p>
+            <a href="https://github.com/bibek1414/tweet-django" target="_blank"
+                class="text-blue-500 mt-3 inline-block">View on GitHub</a>
         </div>
-        {% endfor %} {% endcomment %}
     </div>
 </div>
 
