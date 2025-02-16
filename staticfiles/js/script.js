@@ -1,7 +1,7 @@
 
-// gsap.from("h1", { duration: 1, y: -50, ease: "power2.out" });
-// gsap.from("p", { duration: 1, y: 50, ease: "power2.out", delay: 0.5 });
-// gsap.from("a", { duration: 1, scale: 0, ease: "elastic.out(1, 0.3)", delay: 1 });
+// // gsap.from("h1", { duration: 1, y: -50, ease: "power2.out" });
+// // gsap.from("p", { duration: 1, y: 50, ease: "power2.out", delay: 0.5 });
+// // gsap.from("a", { duration: 1, scale: 0, ease: "elastic.out(1, 0.3)", delay: 1 });
 
 document.addEventListener("DOMContentLoaded", function () {
     // Initial animations for header and text
